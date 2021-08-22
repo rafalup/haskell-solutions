@@ -27,3 +27,5 @@ compress (x:xs) = if (xs /= []) && (x == (xs !! 0))
                   then compress xs
                   else x : compress xs
 ```
+
+Let's go to the next [question](question9.md)
