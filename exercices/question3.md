@@ -15,6 +15,16 @@ Example in Haskell:
 'e'
 ```
 
+Below, we have a resolution of the exercise
+
+```
+elementAt :: [a] -> Int -> a
+elementAt xs idx
+    | idx > len || idx < 1 = error "index exceeds list's length"
+    | otherwise = xs !! (idx - 1)
+    where len = length xs
+```
+
 
 
 Let's go to the next [question](question4.md)

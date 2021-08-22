@@ -8,6 +8,8 @@ These problems have been split into 11 parts, for ease of access.
 [Question 3](exercices/question3.md)<br>
 [Question 4](exercices/question4.md)<br>
 [Question 5](exercices/question5.md)<br>
-
+[Question 6](exercices/question6.md)<br>
+[Question 7](exercices/question7.md)<br>
+[Question 8](exercices/question8.md)<br>
 
 

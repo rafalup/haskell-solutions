@@ -1,0 +1,29 @@
+# Question 8.
+
+Eliminate consecutive duplicates of list elements.
+
+If a list contains repeated elements they should be replaced with a single copy of the element. The order of the elements should not be changed.
+
+Example:
+
+```
+* (compress '(a a a a b c c a a d e e e e))
+(A B C A D E)
+```
+
+Example in Haskell:
+
+```
+λ> compress "aaaabccaadeeee"
+"abcade"
+```
+
+Below, we have a resolution of the exercise
+
+```
+compress :: (Eq a) => [a] -> [a]
+compress [] = []
+compress (x:xs) = if (xs /= []) && (x == (xs !! 0)) 
+                  then compress xs
+                  else x : compress xs
+```

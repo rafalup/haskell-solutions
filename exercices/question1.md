@@ -12,6 +12,14 @@ Example in Haskell:
 'z'
 ```
 
+Below, we have a resolution of the exercise
+
+```
+myLast :: [a] -> a
+myLast [] = error "empty list"
+myLast [x] = x
+myLast (x:xs) = myLast xs
+```
 
 
 Let's go to the next [question](question2.md)

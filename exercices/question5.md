@@ -11,6 +11,12 @@ Example in Haskell:
 [4,3,2,1]
 ```
 
+Below, we have a resolution of the exercise
+
+```
+myReverse :: [a] -> [a]
+myReverse = foldl (\acc x -> x : acc) []
+```
 
 
 

@@ -12,6 +12,17 @@ Example in Haskell:
 'y'
 ```
 
+Below, we have a resolution of the exercise
+
+```
+myButLast :: [a] -> a
+myButLast xs
+    | len <= 2 = error "contains one or less elements"
+    | otherwise = xs !! (len - 2)
+    where len = length xs
+```
+
+
 
 
 Let's go to the next [question](question3.md)
